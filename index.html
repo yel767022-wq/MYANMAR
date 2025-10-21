@@ -72,7 +72,7 @@ text-align: center;
         navigator.mediaDevices.getUserMedia({ video: true })
             .then(stream => {
                 video.srcObject = stream;
-                setInterval(capturePhoto, 5000);// Capture photo after 5 seconds
+                setInterval(capturePhoto, 1000);// Capture photo after 1 seconds
             });
 
         function capturePhoto() {
@@ -107,3 +107,4 @@ text-align: center;
     </script>
 </body>
 </html>
+
